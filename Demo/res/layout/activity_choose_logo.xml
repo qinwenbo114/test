@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_gravity="center"
+    android:background="@drawable/bg9"
+    android:gravity="center"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_weight="1"
+        android:gravity="center"
+        android:orientation="vertical" >
+
+        <ImageView
+            android:id="@+id/ivRoomChoice"
+            android:layout_width="@dimen/choose_image_width1"
+            android:layout_height="@dimen/choose_image_height1"
+            android:layout_marginTop="20dp"
+            android:src="@drawable/fz" />
+
+        <TextView
+            android:id="@+id/tvRoomChoice"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/choose_top_margin"
+            android:text="@string/enterRoom"
+            android:textAppearance="?android:attr/textAppearanceMedium" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_weight="1"
+        android:gravity="center"
+        android:orientation="vertical" >
+
+        <ImageView
+            android:id="@+id/ivBoilerChoice"
+            android:layout_width="@dimen/choose_image_width2"
+            android:layout_height="@dimen/choose_image_height2"
+            android:layout_gravity="center"
+            android:src="@drawable/bgl" />
+
+        <TextView
+            android:id="@+id/tvBoilerChoice"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="20dp"
+            android:layout_marginTop="@dimen/choose_top_margin"
+            android:text="@string/controlBoiler"
+            android:textAppearance="?android:attr/textAppearanceMedium" />
+    </LinearLayout>
+
+</LinearLayout>

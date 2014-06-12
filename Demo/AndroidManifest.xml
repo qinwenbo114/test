@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.acs.demo"
+    android:versionCode="1"
+    android:versionName="1.0" >
+
+    <uses-sdk
+        android:minSdkVersion="11"
+        android:targetSdkVersion="18" />
+    
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.CHANGE_WIFI_STATE" />
+
+    <application
+        android:name=".BaseURL"
+        android:allowBackup="true"
+        android:icon="@drawable/ic_launcher"
+        android:label="@string/app_name"
+        android:theme="@android:style/Theme.Holo.Light" >
+        <activity
+            android:name="com.acs.demo.LoginUI"
+            android:label="@string/app_name"
+            android:launchMode="singleTask"
+            android:screenOrientation="portrait" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity 
+            android:name="com.acs.demo.RoomListUI"
+            android:screenOrientation="portrait"
+            android:launchMode="singleTask" >
+        </activity>
+        <activity 
+            android:name="com.acs.demo.RoomUI"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity 
+            android:name="com.acs.demo.BoilerUI"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity 
+            android:name="com.acs.demo.ChooseLogoUI"
+            android:launchMode="singleTask"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity 
+            android:name="com.acs.demo.ProgramUI"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity 
+            android:name="com.acs.demo.RegisterUI"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.acs.demo.IfAddBoiler"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.acs.demo.IfAddRoom"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.acs.demo.ProgramLandUI"
+            android:screenOrientation="landscape" >
+        </activity>
+        <activity
+            android:name="com.acs.demo.ApplyUI" >
+        </activity>
+        <activity
+            android:name="com.acs.demo.AddDeviceUI" >
+        </activity>
+        <activity
+            android:name="com.acs.demo.AddingRoomUI" >
+        </activity>
+        <activity
+            android:name="com.acs.demo.ChooseTempCurveUI" 
+            android:screenOrientation="landscape" >
+        </activity>
+        <activity
+            android:name="com.acs.demo.ConfigWifiUI" >
+        </activity>
+        <activity
+            android:name="com.acs.demo.WifiListUI" >
+        </activity>
+        <activity
+            android:name="com.acs.demo.WifiListPhoneUI" >
+        </activity>
+        <activity
+            android:name="com.acs.demo.WifiKeyUI" >
+        </activity>
+        <activity
+            android:name="com.acs.demo.HelpWebUI"
+            android:theme="@android:style/Theme.Holo.NoActionBar" >
+        </activity>
+    </application>
+
+</manifest>

@@ -1,0 +1,420 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/roomLinearLayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bgtest"
+    android:orientation="vertical"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="20dp"
+    android:paddingRight="20dp"
+    android:paddingTop="@dimen/activity_top_margin" >
+
+    <RelativeLayout
+        android:layout_width="match_parent" 
+        android:layout_height="wrap_content" >
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_alignBottom="@+id/l1"
+            android:alpha="0.5"
+            android:background="#B2AAAA" >
+        </RelativeLayout>
+
+        <LinearLayout
+            android:id="@+id/l1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal" >
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_weight="1"
+                android:alpha="1"
+                android:gravity="center"
+                android:orientation="vertical" >
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:orientation="horizontal" >
+
+                    <ImageView
+                        android:layout_width="@dimen/room_pic_width"
+                        android:layout_height="@dimen/room_pic_height"
+                        android:src="@drawable/thermometer2" />
+
+                    <LinearLayout
+                        android:layout_width="@dimen/activity_width1"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal" >
+
+                        <TextView
+                            android:id="@+id/tvTempNow"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="20.0"
+                            android:textColor="#0099CC"
+                            android:textSize="@dimen/text_size_large2" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="℃"
+                            android:textColor="#333333"
+                            android:textSize="@dimen/text_size_large2" />
+                    </LinearLayout>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:paddingTop="30dp" >
+
+                    <ImageView
+                        android:layout_width="@dimen/room_pic_width"
+                        android:layout_height="@dimen/room_pic_height"
+                        android:src="@drawable/heat" />
+
+                    <TextView
+                        android:id="@+id/tvHeatingStatus"
+                        android:layout_width="@dimen/activity_width1"
+                        android:layout_height="wrap_content"
+                        android:text="@string/stopped"
+                        android:textColor="#333333"
+                        android:singleLine="true"
+                        android:textSize="@dimen/text_size_middle" />
+                </LinearLayout>
+                
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:orientation="vertical" >
+
+                <ImageButton
+                    android:id="@+id/btUp"
+                    android:layout_width="@dimen/temp_mig_size"
+                    android:layout_height="@dimen/temp_mig_size"
+                    android:background="#00000000"
+                    android:paddingTop="@dimen/temp_mig_top"
+                    android:src="@drawable/up2" />
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal" >
+
+                    <TextView
+                        android:id="@+id/tvTempSet"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="40"
+                        android:textColor="#0099CC"
+                        android:textSize="@dimen/text_size_xlarge" />
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:gravity="center"
+                        android:orientation="vertical" >
+
+                        <TextView
+                            android:id="@+id/tvTTC"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:text="℃"
+                            android:textSize="@dimen/text_size_mlarge" />
+
+                        <TextView
+                            android:id="@+id/tvTTT"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:text=""
+                            android:textSize="35sp" />
+                    </LinearLayout>
+                </LinearLayout>
+
+                <ImageButton
+                    android:id="@+id/btDown"
+                    android:layout_width="@dimen/temp_mig_size"
+                    android:layout_height="@dimen/temp_mig_size"
+                    android:background="#00000000"
+                    android:paddingBottom="@dimen/temp_mig_top"
+                    android:src="@drawable/down2" />
+            </LinearLayout>
+        </LinearLayout>
+    </RelativeLayout>
+<!-- 
+    <LinearLayout
+        android:id="@+id/llThModel0"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:gravity="center"
+        android:orientation="vertical" >
+
+        <LinearLayout
+            android:id="@+id/llModelTitle1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:gravity="left"
+            android:orientation="vertical"
+            android:paddingTop="@dimen/activity_top8_margin" >
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal" >
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/tvMode"
+                style="@style/AudioFileInfoOverlayText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/activity_top6_margin"
+                android:paddingLeft="@dimen/activity_left5_margin"
+                android:text="Heating Mode"
+                android:textColor="#FFFFFF"
+                android:textSize="@dimen/text_size_middle" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/llModel1"
+            android:layout_width="match_parent"
+            android:layout_height="100dp"
+            android:gravity="center"
+            android:orientation="horizontal" >
+
+            <ImageView
+                android:id="@+id/ivSchedule"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/sc2" />
+
+            <ImageView
+                android:id="@+id/ivParty"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/activity_left2_margin"
+                android:src="@drawable/jh" />
+
+            <ImageView
+                android:id="@+id/ivOut"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/activity_left2_margin"
+                android:src="@drawable/out" />
+
+            <ImageView
+                android:id="@+id/ivSwitch"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/activity_left2_margin"
+                android:src="@drawable/sw" />
+        </LinearLayout>
+    </LinearLayout>-->
+
+    <LinearLayout
+        android:id="@+id/llThModel1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:gravity="center"
+        android:orientation="vertical" >
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:orientation="horizontal" >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/comfTemp"
+            	style="@style/AudioFileInfoOverlayText"
+            	android:textColor="#FFFFFF"
+                android:textSize="@dimen/text_size_middle2" />
+
+            <TextView
+                android:id="@+id/tvComfTemp"
+                android:layout_width="@dimen/program_text_width"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+            	style="@style/AudioFileInfoOverlayText"
+            	android:textColor="#FFFFFF"
+                android:text="N/A"
+                android:textSize="@dimen/text_size_middle2" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+            	style="@style/AudioFileInfoOverlayText"
+            	android:textColor="#FFFFFF"
+                android:text="℃"
+                android:textSize="@dimen/text_size_middle2" />
+
+            <SeekBar
+                android:id="@+id/sbComfTemp"
+                android:layout_width="@dimen/seekbar_width"
+                android:layout_height="wrap_content"
+                android:max="40"
+                android:secondaryProgress="100" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/seekbar_margin_top"
+            android:layout_marginBottom="@dimen/seekbar_margin_bottom"
+            android:gravity="center"
+            android:orientation="horizontal" >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/saveTemp"
+            	style="@style/AudioFileInfoOverlayText"
+            	android:textColor="#FFFFFF"
+                android:textSize="@dimen/text_size_middle2" />
+
+            <TextView
+                android:id="@+id/tvSaveTemp"
+                android:layout_width="@dimen/program_text_width"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+            	style="@style/AudioFileInfoOverlayText"
+            	android:textColor="#FFFFFF"
+                android:text="N/A"
+                android:textSize="@dimen/text_size_middle2" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+            	style="@style/AudioFileInfoOverlayText"
+            	android:textColor="#FFFFFF"
+                android:text="℃"
+                android:textSize="@dimen/text_size_middle2" />
+
+            <SeekBar
+                android:id="@+id/sbSaveTemp"
+                android:layout_width="@dimen/seekbar_width"
+                android:layout_height="wrap_content"
+                android:max="40"
+                android:secondaryProgress="100" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal" >
+        <TextView
+            android:id="@+id/tvMode"
+            style="@style/AudioFileInfoOverlayText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="left"
+            android:layout_marginTop="@dimen/activity_top6_margin"
+            android:paddingLeft="@dimen/activity_left5_margin"
+            android:text="Heating Mode"
+            android:textColor="#FFFFFF"
+            android:textSize="@dimen/text_size_middle" />
+        
+        <TextView
+            android:id="@+id/tvConnectErr"
+            style="@style/AudioFileInfoOverlayText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="left"
+            android:layout_marginTop="@dimen/activity_top6_margin"
+            android:paddingLeft="@dimen/activity_left5_margin"
+            android:text="@string/connectError"
+            android:textColor="#FF5555"
+            android:singleLine="true"
+            android:ellipsize="marquee"
+            android:textSize="@dimen/text_size_middle" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/llModel1"
+            android:layout_width="match_parent"
+            android:layout_height="100dp"
+            android:gravity="center"
+            android:orientation="horizontal" >
+
+            <ImageView
+                android:id="@+id/ivAuto"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/zd" />
+
+            <ImageView
+                android:id="@+id/ivSave"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/activity_left6_margin"
+                android:src="@drawable/jn" />
+
+            <ImageView
+                android:id="@+id/ivSwitch2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/activity_left6_margin"
+                android:src="@drawable/sw" />
+        </LinearLayout>
+        
+        <LinearLayout
+            android:id="@+id/llModel0"
+            android:layout_width="match_parent"
+            android:layout_height="100dp"
+            android:gravity="center"
+            android:orientation="horizontal" >
+
+            <ImageView
+                android:id="@+id/ivSchedule"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/sc2" />
+
+            <ImageView
+                android:id="@+id/ivParty"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/activity_left2_margin"
+                android:src="@drawable/jh" />
+
+            <ImageView
+                android:id="@+id/ivOut"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/activity_left2_margin"
+                android:src="@drawable/out" />
+
+            <ImageView
+                android:id="@+id/ivSwitch"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/activity_left2_margin"
+                android:src="@drawable/sw" />
+        </LinearLayout>
+    </LinearLayout>
+
+</LinearLayout>

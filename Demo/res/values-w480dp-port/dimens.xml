@@ -1,0 +1,67 @@
+<resources>
+
+    <!-- w480port screen margins, per the Android Design guidelines. -->
+    <dimen name="activity_horizontal_margin">16dp</dimen>
+    <dimen name="activity_vertical_margin">16dp</dimen>
+    <dimen name="activity_top_margin">60dp</dimen>
+    <dimen name="activity_top2_margin">15dp</dimen>
+    <dimen name="activity_top3_margin">55dp</dimen>
+    <dimen name="activity_top4_margin">35dp</dimen>
+    <dimen name="activity_top5_margin">55dp</dimen>
+    <dimen name="activity_top6_margin">20dp</dimen>
+    <dimen name="activity_top7_margin">60dp</dimen>
+    <dimen name="activity_top8_margin">250dp</dimen>
+    <dimen name="activity_bottom_margin">0dp</dimen>
+    <dimen name="activity_bottom4_margin">35dp</dimen>
+    <dimen name="activity_left_margin">20dp</dimen>
+    <dimen name="activity_left2_margin">40dp</dimen>
+    <dimen name="activity_left3_margin">10dp</dimen>
+    <dimen name="activity_left4_margin">100dp</dimen>
+    <dimen name="activity_left5_margin">60dp</dimen>
+    <dimen name="activity_left6_margin">60dp</dimen>
+    <dimen name="activity_right_margin">20dp</dimen>
+    <dimen name="activity_width1">110dp</dimen>
+    <dimen name="activity_width2">70dp</dimen>
+    <dimen name="activity_width3">50dp</dimen>
+    <dimen name="activity_width4">120dp</dimen>
+    <dimen name="button_width">78dp</dimen>
+    <dimen name="button_height">30dp</dimen>
+    <dimen name="text_size_xlittle">15sp</dimen>
+    <dimen name="text_size_little">20sp</dimen>
+    <dimen name="text_size_middle">22sp</dimen>
+    <dimen name="text_size_middle2">15sp</dimen>
+    <dimen name="text_size_large">28sp</dimen>
+    <dimen name="text_size_mlarge">40sp</dimen>
+    <dimen name="text_size_xlarge">95sp</dimen>
+    <dimen name="text_size_large2">28sp</dimen>
+    <dimen name="program_text_size_little">15sp</dimen>
+    <dimen name="program_text_size_middle">15sp</dimen>
+    <dimen name="program_text_size_large">18sp</dimen>
+    <dimen name="program_seekbar_size">200dp</dimen>
+    <dimen name="choose_image_width1">185dp</dimen>
+    <dimen name="choose_image_height1">173dp</dimen>
+    <dimen name="choose_image_width2">101dp</dimen>
+    <dimen name="choose_image_height2">172dp</dimen>
+    <dimen name="choose_top_margin">30dp</dimen>
+    <dimen name="image_sun_height">28dp</dimen>
+    <dimen name="list_item_height">85dp</dimen>
+    <dimen name="list_item_pic">77dp</dimen>
+    <dimen name="list_item_txt1">20sp</dimen>
+    <dimen name="list_item_txt2">40sp</dimen>
+    <dimen name="list_item_txt3">15sp</dimen>
+    <dimen name="list_item_txt4">77sp</dimen>
+    <dimen name="list_item_txt5">20sp</dimen>
+    <dimen name="list_item_width">60dp</dimen>
+    <dimen name="room_pic_height">20dp</dimen>
+    <dimen name="room_pic_width">50dp</dimen>
+    <dimen name="form_marginLR">50dp</dimen>
+    <dimen name="temp_mig_size">45dp</dimen>
+    <dimen name="temp_mig_top">10dp</dimen>
+    <dimen name="boiler_button_height">35dp</dimen>
+    <dimen name="program_text_width">30dp</dimen>
+    <dimen name="seekbar_margin_top">20dp</dimen>
+    <dimen name="seekbar_margin_bottom">40dp</dimen>
+    <dimen name="seekbar_width">250dp</dimen>
+    <dimen name="list_roomname_width">130dp</dimen>
+
+</resources>

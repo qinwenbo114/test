@@ -1,0 +1,90 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/form_marginLR"
+    android:paddingRight="@dimen/form_marginLR"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:background="@drawable/bg5"
+    tools:context=".LoginUI" >
+
+    <TextView
+        android:id="@+id/logInAcount"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/loginToAccount"
+        android:layout_marginTop="15dp"
+        android:textAppearance="?android:attr/textAppearanceLarge" />
+
+    <EditText
+        android:id="@+id/uN"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/logInAcount"
+        android:layout_below="@+id/logInAcount"
+        android:ems="10"
+        android:layout_marginTop="10dp"
+        android:hint="@string/un"
+        android:inputType="textPersonName" >
+
+        <requestFocus />
+    </EditText>
+
+    <EditText
+        android:id="@+id/uP"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/uN"
+        android:layout_below="@+id/uN"
+        android:ems="10"
+        android:layout_marginTop="10dp"
+        android:hint="@string/pw"
+        android:inputType="textPassword" />
+
+    <Button
+        android:id="@+id/buttonLogIn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignRight="@+id/uN"
+		android:layout_below="@+id/uP"
+        android:text="@string/login" />
+
+    <View
+        android:id="@+id/view1"
+        android:layout_width="300dp"
+        android:layout_height="2dip"
+        android:layout_below="@+id/buttonLogIn"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10dp"
+        android:background="#FF909090" />
+
+    <TextView
+        android:id="@+id/textViewSignUp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/checkBoxRemMe"
+        android:layout_below="@+id/view1"
+        android:layout_marginTop="15dp"
+        android:layout_marginLeft="20dp"
+        android:text="@string/registNewAccount" />
+
+    <TextView
+        android:id="@+id/textViewForget"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/textViewSignUp"
+        android:layout_below="@+id/textViewSignUp"
+        android:layout_marginTop="10dp"
+        android:text="@string/forgetPW" />
+
+    <CheckBox
+        android:id="@+id/checkBoxRemMe"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/buttonLogIn"
+        android:layout_alignBottom="@+id/buttonLogIn"
+        android:layout_alignLeft="@+id/uP"
+        android:text="@string/rememberMe" />
+
+</RelativeLayout>

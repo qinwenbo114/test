@@ -1,0 +1,8 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android" >
+    
+    <item
+        android:id="@+id/muWifiSet"
+        android:orderInCategory="3"
+        android:showAsAction="never|withText"
+        android:title="@string/config_wifi"/>
+</menu>

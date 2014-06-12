@@ -1,0 +1,32 @@
+<resources>
+
+    <!-- w1280dp-land screen margins, per the Android Design guidelines. -->
+    <dimen name="activity_top4_margin">70dp</dimen>
+    <dimen name="activity_bottom4_margin">70dp</dimen>
+    <dimen name="program_text_size_little">28sp</dimen>
+    <dimen name="program_text_size_little2">24sp</dimen>
+    <dimen name="program_text_size_middle">30sp</dimen>
+    <dimen name="program_text_size_large">40sp</dimen>
+    <dimen name="program_seekbar_size">350dp</dimen>
+    <dimen name="program_pic_hight">440dp</dimen>
+    <dimen name="program_pic_width">80dp</dimen>
+    <dimen name="program_pic_marge">15dp</dimen>
+    <dimen name="program_margin_top">50dp</dimen>
+    <dimen name="program_margin_leftright">70dp</dimen>
+    <dimen name="program_margin_seekbar">30dp</dimen>
+    <dimen name="program_text_width">60dp</dimen>
+    <dimen name="curve_margin_bottom_seekbar">60dp</dimen>
+    <dimen name="curve_margin_right_seekbar">100dp</dimen>
+    <dimen name="curve_margin_bottom_pic">100dp</dimen>
+    <dimen name="curve_margin_top_pic">80dp</dimen>
+    <dimen name="curve_margin_top_title">55dp</dimen>
+    <dimen name="curve_width">550dp</dimen>
+    <dimen name="curve_height">1280dp</dimen>
+    <dimen name="curve_text_size">32sp</dimen>
+    <dimen name="curve_text_size2">35sp</dimen>
+    <dimen name="curve_margin_left">65dp</dimen>
+    <dimen name="curve_button_size">65dp</dimen>
+    <dimen name="curve_button_margin_right">20dp</dimen>
+    <dimen name="curve_button_margin_vert">72dp</dimen>
+
+</resources>

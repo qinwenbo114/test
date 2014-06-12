@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="keyMode">
+        <item>OPENWEP</item>
+        <item>SHAREDWEP</item>
+        <item>WPAPSK</item>
+        <item>WPA2PSK</item>
+    </string-array>
+    <string-array name="keyStyleWep">  
+        <item>ASCII</item>  
+        <item>HEX</item>
+    </string-array>
+    <string-array name="keyStyleWpa">  
+        <item>AES</item>
+        <item>TKIP</item>  
+    </string-array>
+</resources>

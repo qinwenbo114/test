@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/tempCurveLayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg11"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:id="@+id/rlCurve"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" >
+
+        <ImageView
+            android:id="@+id/ivPic"
+            android:layout_width="@dimen/curve_height"
+            android:layout_height="@dimen/curve_width"
+            android:layout_marginBottom="@dimen/curve_margin_bottom_pic"
+            android:layout_marginTop="@dimen/curve_margin_top_pic"
+            android:src="@drawable/pic0" />
+        
+        
+
+        <!-- 
+        <SeekBar
+            android:id="@+id/sbChoosePic"
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentRight="true"
+            android:layout_marginBottom="@dimen/curve_margin_bottom_seekbar"
+            android:layout_marginRight="@dimen/curve_margin_right_seekbar"
+            android:max="9" /> -->
+
+        <TextView
+            android:id="@+id/textView3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginTop="@dimen/curve_margin_top_title"
+            android:layout_marginLeft="@dimen/curve_margin_left"
+            android:text="@string/tempTar"
+            android:textSize="@dimen/curve_text_size" />
+
+        <TextView
+            android:id="@+id/textView2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@+id/ivPic"
+            android:layout_alignParentRight="true"
+            android:text="@string/tempOut"
+            android:textSize="@dimen/curve_text_size" />
+
+        <!-- 
+        <TextView
+            android:id="@+id/textView1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@+id/sbChoosePic"
+            android:layout_marginRight="22dp"
+            android:layout_toLeftOf="@+id/sbChoosePic"
+            android:text="选择温度曲线:"
+            android:textSize="@dimen/curve_text_size2" /> -->
+
+        <ImageView
+            android:id="@+id/ivCurveDown"
+            android:layout_width="@dimen/curve_button_size"
+            android:layout_height="@dimen/curve_button_size"
+            android:layout_above="@+id/textView2"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="@dimen/curve_button_margin_right"
+            android:layout_marginBottom="@dimen/curve_button_margin_vert"
+            android:src="@drawable/down4" />
+
+        <ImageView
+            android:id="@+id/ivCurveUp"
+            android:layout_width="@dimen/curve_button_size"
+            android:layout_height="@dimen/curve_button_size"
+            android:layout_alignParentRight="true"
+            android:layout_alignTop="@+id/ivPic"
+            android:layout_marginRight="@dimen/curve_button_margin_right"
+            android:layout_marginTop="@dimen/curve_button_margin_vert"
+            android:src="@drawable/up4" />
+
+    </RelativeLayout>
+
+</LinearLayout>

@@ -1,0 +1,338 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/boilerLayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bgtest"
+    android:orientation="vertical"
+    android:paddingBottom="@dimen/activity_bottom_margin"
+    android:paddingLeft="@dimen/activity_left_margin"
+    android:paddingRight="@dimen/activity_right_margin"
+    android:paddingTop="@dimen/activity_top_margin" >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" >
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_alignBottom="@+id/l1"
+            android:alpha="0.5"
+            android:background="#B2AAAA" >
+        </RelativeLayout>
+
+        <LinearLayout
+            android:id="@+id/l1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:orientation="horizontal" >
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:layout_marginTop="25dp"
+                android:layout_marginBottom="25dp"
+                android:orientation="vertical" >
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:orientation="horizontal" >
+
+                    <!--
+                <TextView
+                    android:layout_width="100dp"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:text="Indoor "
+                    android:textSize="@dimen/text_size_middle" />
+                    -->
+
+                    <ImageView
+                        android:layout_width="60dp"
+                        android:layout_height="@dimen/image_sun_height"
+                        android:src="@drawable/house" />
+
+                    <TextView
+                        android:id="@+id/tvTempBoiler"
+                        android:layout_width="@dimen/activity_width2"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:text="20.0"
+                        android:textColor="#333333"
+                        android:textSize="@dimen/text_size_middle" />
+
+                    <TextView
+                        android:layout_width="@dimen/activity_width3"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:text="℃"
+                        android:textColor="#333333"
+                        android:textSize="@dimen/text_size_middle" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:orientation="horizontal"
+                    android:paddingTop="30dp" >
+
+                    <!--
+                <TextView
+                    android:layout_width="100dp"
+                    android:layout_height="wrap_content"
+                    android:text="Outdoor "
+                    android:gravity="center"
+                    android:textSize="@dimen/text_size_middle" />
+                    -->
+
+                    <ImageView
+                        android:layout_width="60dp"
+                        android:layout_height="@dimen/image_sun_height"
+                        android:src="@drawable/sun" />
+
+                    <TextView
+                        android:id="@+id/tvTempOut"
+                        android:layout_width="@dimen/activity_width2"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:text="-33.3"
+                        android:textColor="#333333"
+                        android:textSize="@dimen/text_size_middle" />
+
+                    <TextView
+                        android:layout_width="@dimen/activity_width3"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:text="℃"
+                        android:textColor="#333333"
+                        android:textSize="@dimen/text_size_middle" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:orientation="horizontal"
+                    android:paddingTop="30dp" >
+
+                    <ImageView
+                        android:layout_width="60dp"
+                        android:layout_height="@dimen/image_sun_height"
+                        android:src="@drawable/boiler" />
+
+                    <TextView
+                        android:id="@+id/tvBoilerDo"
+                        android:layout_width="@dimen/activity_width4"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:text="@string/connecting"
+                        android:textColor="#333333"
+                        android:singleLine="true"
+                        android:textSize="@dimen/text_size_middle" />
+                </LinearLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:orientation="vertical" >
+
+                <ImageButton
+                    android:id="@+id/btUpBo"
+                    android:layout_width="@dimen/temp_mig_size"
+                    android:layout_height="@dimen/temp_mig_size"
+                    android:background="#00000000"
+                    android:paddingTop="@dimen/temp_mig_top"
+                    android:src="@drawable/up2" />
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:orientation="horizontal"
+                    android:paddingLeft="@dimen/activity_left_margin" >
+
+                    <TextView
+                        android:id="@+id/tvTempTar"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="50"
+                        android:textColor="#0099CC"
+                        android:textSize="@dimen/text_size_xlarge" />
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_gravity="center"
+                        android:gravity="center"
+                        android:orientation="vertical" >
+
+                        <TextView
+                            android:id="@+id/tvTTC"
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:layout_weight="1"
+                            android:gravity="bottom"
+                            android:text="℃"
+                            android:textSize="@dimen/text_size_mlarge" />
+
+                        <TextView
+                            android:id="@+id/tvTTT"
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:layout_weight="1"
+                            android:paddingTop="@dimen/activity_top2_margin"
+                            android:text=""
+                            android:textSize="@dimen/text_size_xlittle" />
+                    </LinearLayout>
+                </LinearLayout>
+
+                <ImageButton
+                    android:id="@+id/btDownBo"
+                    android:layout_width="@dimen/temp_mig_size"
+                    android:layout_height="@dimen/temp_mig_size"
+                    android:background="#00000000"
+                    android:paddingBottom="@dimen/temp_mig_top"
+                    android:src="@drawable/down2" />
+            </LinearLayout>
+        </LinearLayout>
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:orientation="horizontal"
+        android:paddingTop="@dimen/activity_top_margin" >
+
+        <ImageView
+            android:id="@+id/ivHeating"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:src="@drawable/heating40" />
+
+        <ImageView
+            android:id="@+id/ivFire"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:src="@drawable/fire40" />
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center" >
+
+            <ImageView
+                android:id="@+id/ivError"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/warningon" />
+
+            <ImageView
+                android:id="@+id/ivLock"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/lock" />
+
+            <TextView
+                android:id="@+id/tvError"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentTop="true"
+                android:layout_alignRight="@+id/ivError"
+                android:text="1"
+                android:textColor="#FF0000"
+                android:textSize="35sp" />
+        </RelativeLayout>
+    </LinearLayout>
+    <!--
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:orientation="horizontal"
+        android:paddingTop="@dimen/activity_top_margin" >
+
+        <ToggleButton
+            android:id="@+id/tbHS"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:textOff="Start Heating"
+            android:textOn="Stop Heating" />
+
+        
+
+        <ToggleButton
+            android:id="@+id/tbBS"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:textOff="ON"
+            android:textOn="OFF" />
+
+
+        <Button
+            android:id="@+id/btRS"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Reset" />
+    </LinearLayout>
+    -->
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:orientation="horizontal"
+        android:paddingTop="@dimen/activity_top7_margin" >
+
+        <ImageView
+            android:id="@+id/ivHS"
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/boiler_button_height"
+            android:layout_weight="1"
+            android:src="@drawable/heatingon2" />
+        <!--
+    <ImageView
+        android:id="@+id/ivBS"
+        android:layout_weight="1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/on" />
+        -->
+        <ImageView
+            android:id="@+id/ivCurve"
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/boiler_button_height"
+            android:layout_weight="1"
+            android:src="@drawable/curve" />
+
+        <ImageView
+            android:id="@+id/ivRS"
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/boiler_button_height"
+            android:layout_weight="1"
+            android:src="@drawable/tools" />
+    </LinearLayout>
+
+</LinearLayout>
